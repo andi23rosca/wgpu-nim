@@ -12,8 +12,9 @@ bin           = @["wgpu_nim"]
 # Dependencies
 
 requires "nim >= 2.2.0"
+requires "futhark"
 
 # Tasks
 
-task hello, "This is a hello task":
-  echo "Hello World!"
+task update, "Update submodules":
+  exec "git submodule update --init --recursive"

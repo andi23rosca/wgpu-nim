@@ -1,0 +1,2 @@
+install_name_tool -add_rpath /Library/Developer/CommandLineTools/usr/lib/ ~/.nimble/pkgs2/futhark-0.13.7-1283941b3dffffd978858122e052ab6bb135359b/futhark/opir
+install_name_tool -change libclang.dylib @loader_path/Library/Developer/CommandLineTools/usr/lib/ ~/.nimble/pkgs2/futhark-0.13.7-1283941b3dffffd978858122e052ab6bb135359b/futhark/opir
